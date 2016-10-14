@@ -2,6 +2,8 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
+import java.lang.Math;
+
 package Math;
 
 /**
@@ -53,6 +55,10 @@ public class SimpleMath {
         double totalPayments = finalmonthlyPayment * months;
         double totalInterest = totalPayments - principal; 
         return monthlyPayment;
+    }
+    
+    public static double sqrt(double number) {
+        return java.lang.Math.sqrt(number);
     }
     
     }
