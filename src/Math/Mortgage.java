@@ -4,6 +4,7 @@
  */
 package Math;
 
+import SimpleMath;
 /**
  *
  * @author hogueb10289
