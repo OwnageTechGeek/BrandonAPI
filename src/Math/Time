@@ -56,6 +56,36 @@ public class Time {
         return temp;
         }
         }
+        
+        public static string prettytime(string type, string outputformat, int time) {
+        if (type = "hours") {
+        double temp = number * 3600 * 1000;
+        }
+        if (type = "minutes") {
+        double temp = number * 60 * 1000;
+        }
+        
+        if (type = "seconds") {
+        double temp = number * 1000;
+        }
+        
+        if (type = "milliseconds") {
+        double temp = number
+        
+        if (type = "days") {
+        double temp = number * 24 * 3600 * 1000;
+        }
+        
+        if (type = "weeks") {
+        double temp = number * 7 * 24 * 3600 * 1000;
+        
+        
+        
+        if (outputformat = "milliseconds") {
+        string returnstring = "Hours: " +hours " Minutes: " +minutes " Seconds: " +seconds " Milliseconds: " +milliseconds;
+        return returnstring;
+        }
+        
         }
         
         
