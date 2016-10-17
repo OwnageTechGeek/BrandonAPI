@@ -1,0 +1,48 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Math;
+
+import SimpleMath;
+/**
+ *
+ * @author hogueb10289
+ */
+public class Time {
+    
+        public static double converter(string type, string towhat, double number) {
+        if (type = "hours") {
+        double temp = number * 3600 * 1000;
+        }
+        if (type = "minutes") {
+        double temp = number * 60 * 1000;
+        }
+        
+        if (type = "seconds") {
+        double temp = number * 1000;
+        }
+        
+        if (type = "days") {
+        double temp = number * 24 * 3600 * 1000;
+        }
+        
+        if (type = "weeks") {
+        double temp = number * 7 * 24 * 3600 * 1000;
+        }
+        
+        if (towhat = "hours") {
+        return double temp / (3600 * 1000);
+        }
+        
+        if (towhat = "minutes") {
+        return double temp / (60 * 1000);
+        }
+        
+        if (towhat = "seconds") {
+        return double temp / ( 1000);
+        }
+        
+        
+
+        
