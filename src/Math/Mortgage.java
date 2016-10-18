@@ -23,10 +23,10 @@ public class Mortgage {
         double finalmonthlyPayment = SimpleMath.rounder(monthlyPayment, round);
         }
         if (round = 0) {
-        double finalmonthlypayment = monthlyPayment
+        double finalmonthlypayment = monthlyPaymentl;
         }
         if (round < 0) {
-        double finalmonthlypayment = monthlyPayment
+        double finalmonthlypayment = monthlyPaymentl;
         }       
         double finalmonthlyPayment = SimpleMath.rounder(monthlyPayment, round);
         double totalPayments = finalmonthlyPayment * months;
