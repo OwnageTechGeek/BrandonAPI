@@ -47,4 +47,20 @@ public class SimpleMath {
         return java.lang.Math.sqrt(number);
     }
     
+    public static int gcf(int numberone, int numbertwo) {
+        int gcf = Math.Max(numberone, numbertwo) - Math.Min(numberone,numbertwo)
+        return gcf;
+    }
+    
+    public static long gcd(long numberOne, long numberTwo)
+    {
+    while (remainder > 0)
+    {
+        long temp = numberTwo;
+        b = a % b; // % is remainder
+        a = temp;
+    }
+    return a;
+}
+    
     }
