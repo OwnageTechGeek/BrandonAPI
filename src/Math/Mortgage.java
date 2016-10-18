@@ -20,15 +20,15 @@ public class Mortgage {
         double R = monthlyRate;
         double monthlyPayment = (((SimpleMath.exponent((1 + R),N) * R) / ((SimpleMath.exponent((1 + R),N)) - 1)) * P);
         if (round > 0) {
-        double finalmonthlyPayment = rounder(monthlyPayment, round);
+        double finalmonthlyPayment = SimpleMath.rounder(monthlyPayment, round);
         }
         if (round = 0) {
         double finalmonthlypayment = monthlyPayment
         }
         if (round < 0) {
         double finalmonthlypayment = monthlyPayment
-       
-        double finalmonthlyPayment = rounder(monthlyPayment, round);
+        }       
+        double finalmonthlyPayment = SimpleMath.rounder(monthlyPayment, round);
         double totalPayments = finalmonthlyPayment * months;
         double totalInterest = totalPayments - principal; 
         return monthlyPayment;
@@ -41,9 +41,15 @@ public class Mortgage {
         double decannualRate = annualRate / 100;
         double monthlyRate = decannualRate / 12;
         double R = monthlyRate;
-        double monthlyPayment = (((exponent((1 + R),N) * R) / ((exponent((1 + R),N)) - 1)) * P);
-        if (round >= 0) {
-        double finalmonthlyPayment = rounder(monthlyPayment, round);
+        double monthlyPayment = (((SimpleMath.exponent((1 + R),N) * R) / ((SimpleMath.exponent((1 + R),N)) - 1)) * P);
+        if (round > 0) {
+        double finalmonthlyPayment = SimpleMath.rounder(monthlyPayment, round);
+        }
+        if (round = 0) {
+        double finalmonthlypayment = monthlyPayment
+        }
+        if (round < 0) {
+        double finalmonthlypayment = monthlyPayment
         }
         double totalPayments = finalmonthlyPayment * months;
         double totalInterest = totalPayments - principal; 
@@ -57,9 +63,15 @@ public class Mortgage {
         double decannualRate = annualRate / 100;
         double monthlyRate = decannualRate / 12;
         double R = monthlyRate;
-        double monthlyPayment = (((exponent((1 + R),N) * R) / ((exponent((1 + R),N)) - 1)) * P);
-        if (round >= 0) {
-        double finalmonthlyPayment = rounder(monthlyPayment, round);
+        double monthlyPayment = (((SimpleMath.exponent((1 + R),N) * R) / ((SimpleMath.exponent((1 + R),N)) - 1)) * P);
+        if (round > 0) {
+        double finalmonthlyPayment = SimpleMath.rounder(monthlyPayment, round);
+        }
+        if (round = 0) {
+        double finalmonthlypayment = monthlyPayment
+        }
+        if (round < 0) {
+        double finalmonthlypayment = monthlyPayment
         }
         double finalmonthlyPayment = rounder(monthlyPayment, round);
         double totalPayments = finalmonthlyPayment * months;
