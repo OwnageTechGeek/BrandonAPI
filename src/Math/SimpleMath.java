@@ -61,6 +61,23 @@ public class SimpleMath {
         a = temp;
     }
     return a;
-}
+    }
+    
+    public static double quadraticRoots(long a, long b, long c, int rootNum) {
+        // General format of ax^2+bx+c
+        double temp = Math.sqrt(b * b - 4 * a * c);
+        double root1 = (-b +  temp) / (2*a) ;
+        double root2 = (-b -  temp) / (2*a) ; 
+        
+        if (rootNum = 1) {
+            return root1;
+        }
+        if (rootNum = 2) {
+            return root2;
+        }
+    }
+    
+        
+        
     
     }
